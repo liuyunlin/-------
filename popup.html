@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>流光卡片生成器</title>
+  <style>
+    body {
+      width: 300px;
+      padding: 16px;
+      font-family: Arial, sans-serif;
+    }
+    textarea, select, button {
+      width: 100%;
+      margin-bottom: 16px;
+    }
+    button {
+      background-color: #4285f4;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #3367d6;
+    }
+  </style>
+</head>
+<body>
+  <textarea id="cardText" rows="4" placeholder="输入卡片文字"></textarea>
+  <select id="cardStyle">
+    <option value="red">红色</option>
+    <option value="orange">橙色</option>
+    <option value="yellow">黄色</option>
+    <option value="green">绿色</option>
+    <option value="cyan">青色</option>
+    <option value="blue">蓝色</option>
+    <option value="purple">紫色</option>
+  </select>
+  <button id="generateCard">生成流光卡片</button>
+  <div id="cardPreview" class="hidden">
+    <div class="card">
+      <img id="cardImage" alt="Generated Card">
+      <p id="cardContent"></p>
+      <button id="shareCard">分享</button>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "流光卡片生成器",
+  "version": "1.0",
+  "description": "生成并保存美丽的流光卡片",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "downloads"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
